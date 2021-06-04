@@ -17,5 +17,12 @@
 	\${(5>2) || (2<10) } : ${ (5>2) || (2<10) }<br>
 	<% String input=null; %>
 	\${empty input } : {empty input}<br>
+	
+	<%
+		if(input == null){
+			out.println("텅 빈 객체(null)입니다.");
+		}
+	%>
+	
 </body>
 </html>
